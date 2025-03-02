@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>A MultiLingual Site</title>
+  </head>
+  <body>
+    <!-- 
+    ...............................................................
+    ...............................................................
+                             HEADER / SWITCHER
+    ...............................................................
+    ...............................................................      
+    -->
+    <header>
+      <div class="heading">
+        <h3 class="project-heading">
+          Multi Lingual Tribute Page with Dark Theme
+        </h3>
+      </div>
+      <div class="switchers">
+        <!-- Switcher for Light/Dark Mode -->
+        <div class="switcher-theme">
+          <input
+            type="checkbox"
+            class="switch-mode-input"
+            name="mode-switch"
+            id="mode-switch"
+          />
+          <label for="mode-switch" class="switch-mode-label">
+            <div class="switch-circle"></div>
+          </label>
+        </div>
+        <!-- Switch between Languages -->
+        <div class="switcher-language">
+          <!-- <label for="lang-article">Choose the language: </label> -->
+          <select
+            class="lang-select"
+            name="lang-article"
+            id="lang-article"
+            onchange="changeLanguage()"
+          >
+            <option class="lang-option" value="en">
+              &#127468;&#127463; English
+            </option>
+            <option class="lang-option" value="es">
+              &#127466;&#127480; Español
+            </option>
+            <option class="lang-option" value="fr">
+              &#127467;&#127479; Français
+            </option>
+            <option class="lang-option" value="ru">
+              &#127479;&#127482; Русский
+            </option>
+            <option class="lang-option" value="ua">
+              &#127482;&#127462; Українська
+            </option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- 
+    ...............................................................
+    ...............................................................
+                             ASIDE / SIDEBAR
+    ...............................................................
+    ...............................................................      
+    -->
+
+      <div class="container-aside">
+        <!-- ENGLISH EN -->
+        <aside class="sidebar" data-lang="en">
+          <div class="info-card-wrapper" data-lang="en">
+            <div class="honorifics" data-lang="en">
+              <span class="honorific-prefix honorific-prefix-en" data-lang="en"
+                >Dame</span
+              >
+              <em class="honorific-name honorific-name-en" data-lang="en"
+                >Agatha Christie</em
+              >
+            </div>
+            <figure data-lang="en">
+              <img
+                src="./images/Agatha_Christie.jpg"
+                alt="Agatha Christie in 1920s"
+                class="main-img"
+                data-lang="en"
+              />
+              <figcaption class="figcaption-en" data-lang="en">
+                Agatha Christie in 1920s
+              </figcaption>
+            </figure>
+            <div class="tabled-data" data-lang="en">
+              <dl>
+                <dt class="left-col column-en" data-lang="en">Born</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Agatha Mary Clarissa Miller<br />15 September 1890<br />Torquay,
+                  Devon, England
+                </dd>
+                <dt class="left-col column-en" data-lang="en">Died</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  12 January 1976 (aged 85)<br />Winterbrook House,<br />Wallingford,
+                  Oxfordshire,<br />England
+                </dd>
+                <dt class="left-col column-en" data-lang="en">Resting place</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Church of St Mary, Cholsey,<br />Oxfordshire
+                </dd>
+                <dt class="left-col column-en" data-lang="en">Pen name</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Mary Westmacott
+                </dd>
+                <dt class="left-col column-en" data-lang="en">Occupation</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Novelist, short story writer,<br />playwright, poet, memoirist
+                </dd>
+                <dt class="left-col column-en" data-lang="en">Genre</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Murder mystery, detective story, crime fiction, thriller
+                </dd>
+                <dt class="left-col column-en" data-lang="en">
+                  Literary<br />movement
+                </dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Golden Age of Detective Fiction
+                </dd>
+                <dt class="left-col column-en" data-lang="en">
+                  Notable<br />works
+                </dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Murder on the Orient Express, The Murder of Roger Ackroyd,
+                  Death on the Nile, The Murder at the Vicarage, Partners in
+                  Crime, The A.B.C. Murders, And Then There Were None, The
+                  Mousetrap
+                </dd>
+                <dt class="left-col column-en" data-lang="en">Spouses</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Archibald Christie<br />(m. 1914; div. 1928)​, Max Mallowan(m.
+                  1930)
+                </dd>
+                <dt class="left-col column-en" data-lang="en">Children</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  Rosalind Hicks
+                </dd>
+                <dt class="left-col column-en" data-lang="en">Relatives</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  James Watts (nephew)
+                </dd>
+
+                <dt class="left-col column-en" data-lang="en">Website</dt>
+                <dd class="right-col column-en" data-lang="en">
+                  <a href="https://agathachristie.com" data-lang="en"
+                    >agathachristie.com</a
+                  >
+                </dd>
+              </dl>
+              <p class="sig-en" data-lang="en">Signature</p>
+              <img
+                src="./images/Agatha_Christie's_signature.svg.png"
+                alt="Signature of Agatha Christie"
+                data-lang="en"
+              />
+            </div>
+          </div>
+        </aside>
+        <!-- Spanish ES -->
+        <aside class="sidebar" data-lang="es">
+          <div class="info-card-wrapper" data-lang="es">
+            <div class="honorifics" data-lang="es">
+              <em class="honorific-name honorific-name-es" data-lang="es"
+                >Agatha Christie</em
+              >
+            </div>
+            <figure data-lang="es">
+              <img
+                src="./images/Agatha_Christie.jpg"
+                alt="Agatha Christie in 1920s"
+                class="main-img"
+                data-lang="es"
+              />
+              <figcaption class="figcaption-es" data-lang="es">
+                Christie en 1920.
+              </figcaption>
+            </figure>
+            <div class="tabled-data" data-lang="es">
+              <dl>
+                <dt class="left-col column-es" data-lang="es">
+                  Nombre de nacimiento
+                </dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Agatha Mary Clarissa Miller
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Apodo</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Duchess of Death, Mistress of Mystery y Queen of Crime
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Nacimiento</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  15 de septiembre de 1890<br />Torquay, Devon, Reino Unido de
+                  Gran Bretaña e Irlanda
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Fallecimiento</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  12 de enero de 1976 (85 años)<br />Wallingford, Oxfordshire,
+                  Reino Unido
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Sepultura</dt>
+                <dd class="right-col column-es" data-lang="es">Cholsey</dd>
+                <dt class="left-col column-es" data-lang="es">Nacionalidad</dt>
+                <dd class="right-col column-es" data-lang="es">británica</dd>
+                <dt class="left-col column-es" data-lang="es">
+                  Lengua materna
+                </dt>
+                <dd class="right-col column-es" data-lang="es">inglés</dd>
+                <dt class="left-col column-es" data-lang="es">Padres</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Frederick Alvah Miller<br />Clarisa Margaret Boehmer
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Cónyuge</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Archibald Christie (1914-1928) <br />Max Mallowan (1930-1976)
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Educada en</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Educación privada
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Ocupación</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  novelista, cuentista, autora teatral, poeta
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Años activa</dt>
+                <dd class="right-col column-es" data-lang="es">siglo XX</dd>
+                <dt class="left-col column-es" data-lang="es">Movimiento</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Edad de oro de la ficción detectivesca
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Seudónimo</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Mary Westmacott
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Géneros</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  policiaco, romántico, teatral, suspenso
+                </dd>
+                <dt class="left-col column-es" data-lang="es">
+                  Obras notables
+                </dt>
+                <dd class="right-col column-es" data-lang="es">
+                  El asesinato de Roger Ackroyd, Asesinato en el Orient Express,
+                  Diez negritos, Se anuncia un asesinato, La ratonera
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Miembro de</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Real Sociedad de Literatura
+                </dd>
+                <dt class="left-col column-es" data-lang="es">Distinciones</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  Miembro de la Real Sociedad de Literatura<br />Premio Edgar
+                  Grand Master (1955)<br />Comendador de la Orden del Imperio
+                  británico (1956)<br />Dama comendadora de la Orden del Imperio
+                </dd>
+
+                <dt class="left-col column-es" data-lang="es">Sitio web</dt>
+                <dd class="right-col column-es" data-lang="es">
+                  <a href="https://agathachristie.com" data-lang="es"
+                    >agathachristie.com</a
+                  >
+                </dd>
+              </dl>
+              <p class="sig-es" data-lang="es">Firma</p>
+              <img
+                src="./images/Agatha_Christie's_signature.svg.png"
+                alt="Signature of Agatha Christie"
+                data-lang="es"
+              />
+            </div>
+          </div>
+        </aside>
+        <!-- FRENCH FR -->
+        <aside class="sidebar" data-lang="fr">
+          <div class="info-card-wrapper" data-lang="fr">
+            <div class="honorifics" data-lang="fr">
+              <em class="honorific-name honorific-name-fr" data-lang="fr"
+                >Agatha Christie</em
+              >
+            </div>
+            <figure data-lang="fr">
+              <img
+                src="./images/Agatha_Christie.jpg"
+                alt="Agatha Christie in 1920s"
+                class="main-img"
+                data-lang="fr"
+              />
+              <figcaption class="figcaption-fr" data-lang="fr">
+                Agatha Christie 1920
+              </figcaption>
+            </figure>
+            <div class="tabled-data" data-lang="fr">
+              <dl>
+                <dt class="left-col column-fr" data-lang="fr">Naissance</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  15 septembre 1890 Ashfield (en)
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Décès</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  12 janvier 1976 (à 85 ans)<br />Winterbrook (en) (Royaume-Uni)
+                  ou Wallingford
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Sépulture</dt>
+                <dd class="right-col column-fr" data-lang="fr">Cholsey</dd>
+                <dt class="left-col column-fr" data-lang="fr">
+                  Nom de naissance
+                </dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Agatha Mary Clarissa Miller
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Surnoms</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Duchess of Death, Mistress of Mystery, Queen of Crime
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Pseudonyme</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Mary Westmacott
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Nationalité</dt>
+                <dd class="right-col column-fr" data-lang="fr">britannique</dd>
+                <dt class="left-col column-fr" data-lang="fr">Formation</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Enseignement privé
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Activités</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Écrivaine, romancière, auteure de roman policier
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">
+                  Période d'activité
+                </dt>
+                <dd class="right-col column-fr" data-lang="fr">1920-1976</dd>
+                <dt class="left-col column-fr" data-lang="fr">Père</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Frederick Alvah Miller
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Mère</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Clarisa Margaret Boehmer
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Fratrie</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Margaret Frary Miller (en)<br />Louis Montant Miller
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Conjoints</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Archie Christie (de 1914 à 1928)<br />Max Mallowan (de 1930 à
+                  1976)
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Enfant</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  Rosalind Hicks
+                </dd>
+                <dt class="left-col column-fr" data-lang="fr">Site web</dt>
+                <dd class="right-col column-fr" data-lang="fr">
+                  <a href="https://agathachristie.com" data-lang="fr"
+                    >agathachristie.com</a
+                  >
+                </dd>
+              </dl>
+              <p class="sig-fr" data-lang="fr">Signature</p>
+              <img
+                src="./images/Agatha_Christie's_signature.svg.png"
+                alt="Signature of Agatha Christie"
+                data-lang="fr"
+              />
+            </div>
+          </div>
+        </aside>
+        <!-- RUSSIAN RU -->
+        <aside class="sidebar" data-lang="ru">
+          <div class="info-card-wrapper" data-lang="ru">
+            <div class="honorifics" data-lang="ru">
+              <em class="honorific-name honorific-name-ru" data-lang="ru"
+                >англ. Agatha Christie</em
+              >
+            </div>
+            <figure data-lang="ru">
+              <img
+                src="./images/Agatha_Christie.jpg"
+                alt="Agatha Christie in 1920s"
+                class="main-img"
+                data-lang="ru"
+              />
+              <figcaption class="figcaption-ru" data-lang="ru">
+                Agatha Christie В 192х.
+              </figcaption>
+            </figure>
+            <div class="tabled-data" data-lang="ru">
+              <dl>
+                <dt class="left-col column-ru" data-lang="ru">
+                  Имя при рождении
+                </dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  Агата Мэри Кларисса Миллер
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">Псевдонимы</dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  Mary Westmacott<br />Agatha Christie Mallowan
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">Дата рождения</dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  15 сентября 1890
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">
+                  Место рождения
+                </dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  Торки, Девон, Англия, Великобритания
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">Дата смерти</dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  12 января 1976 (85 лет)
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">Место смерти</dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  Уоллингфорд, Оксфордшир, Англия, Великобритания
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">
+                  Гражданство (подданство)
+                </dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  Великобритания
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">Образование</dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  англ. private education
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">
+                  Род деятельности
+                </dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  прозаик, драматург
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">
+                  Годы творчества
+                </dt>
+                <dd class="right-col column-ru" data-lang="ru">1920—1976</dd>
+                <dt class="left-col column-ru" data-lang="ru">Направление</dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  беллетристика
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">Жанр</dt>
+                <dd class="right-col column-ru" data-lang="ru">
+                  детектив, приключенческий роман, шпионский роман,
+                  автобиография
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">
+                  Язык произведений
+                </dt>
+                <dd class="right-col column-ru" data-lang="ru">английский</dd>
+                <dt class="left-col column-ru" data-lang="ru">Дебют</dt>
+                <dd class="right-col column-ru">
+                  «Таинственное происшествие в Стайлзе»
+                </dd>
+                <dt class="left-col column-ru" data-lang="ru">ВебСайт:</dt>
+                <dd class="right-col column-ru">
+                  <a href="https://agathachristie.com" data-lang="ru"
+                    >agathachristie.com</a
+                  >
+                </dd>
+              </dl>
+              <p class="sig-ru" data-lang="ru">Автограф</p>
+              <img
+                src="./images/Agatha_Christie's_signature.svg.png"
+                alt="Signature of Agatha Christie"
+                data-lang="ru"
+              />
+            </div>
+          </div>
+        </aside>
+        <!-- UKRAINIAN UA -->
+        <aside class="sidebar" data-lang="ua">
+          <div class="info-card-wrapper" data-lang="ua">
+            <div class="honorifics" data-lang="ua">
+              <em class="honorific-name honorific-name-ua" data-lang="ua"
+                >Agatha Christie</em
+              >
+            </div>
+            <figure data-lang="ua">
+              <img
+                src="./images/Agatha_Christie.jpg"
+                alt="Agatha Christie in 1920s"
+                class="main-img"
+                data-lang="ua"
+              />
+              <figcaption class="figcaption-ua" data-lang="ua">
+                Agatha Christie in 1920s
+              </figcaption>
+            </figure>
+            <div class="tabled-data" data-lang="ua">
+              <dl>
+                <dt class="left-col column-ua" data-lang="ua">
+                  Ім'я при народженні
+                </dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  англ. Agatha Mary Clarissa Miller
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Прізвисько</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Duchess of Death, Mistress of Mystery і Queen of Crime
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Псевдонім</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Мері Вестмакотт
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Народилася</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  15 вересня 1890 Торкі, Девон, Англія, Велика Британія
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Померла</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  12 січня 1976 (85 років)<br />Воллінгфорд, Оксфордшир, Англія,
+                  Велика Британія
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Поховання</dt>
+                <dd class="right-col column-ua" data-lang="ua">Чолсі</dd>
+                <dt class="left-col column-ua" data-lang="ua">Підданство</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Велика Британія
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Діяльність</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  прозаїк, драматург
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Сфера роботи</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  кримінальний роман, детективна література, творче та
+                  професійне письмо і літературна діяльність
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Alma mater</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  приватна освіта
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Мова творів</dt>
+                <dd class="right-col column-ua" data-lang="ua">англійська</dd>
+                <dt class="left-col column-ua" data-lang="ua">
+                  Роки активності
+                </dt>
+                <dd class="right-col column-ua" data-lang="ua">1920—1976</dd>
+                <dt class="left-col column-ua" data-lang="ua">Напрямок</dt>
+                <dd class="right-col column-ua" data-lang="ua">белетристика</dd>
+                <dt class="left-col column-ua" data-lang="ua">Жанр</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  детектив, трилер, драма, поезія
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Magnum opus</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  opus Вбивство Роджера Екройда, Загадка Сіттафорда, Загадка
+                  Ендхауза, Смерть лорда Еджвера, Вбивство у «Східному
+                  експресі», Вбивства за алфавітом, Карти на стіл, Смерть на
+                  Нілі, Сумний кипарис, П'ять поросят, Година нуль, Оголошено
+                  вбивство, Дочка є дочка, Нескінченна ніч, Завіса, Забуте
+                  вбивство і І не лишилось жодного
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Членство</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Королівське літературне товариство
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Батько</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Frederick Alvah Miller
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Мати</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Clarisa Margaret Boehmer
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Брати, сестри</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Margaret Frary Millerd і Louis Miller
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">У шлюбі з</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Маллоуен Макс і Archie Christie
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Діти</dt>
+                <dd class="right-col column-ua" data-lang="ua">
+                  Розалінд Гікс
+                </dd>
+                <dt class="left-col column-ua" data-lang="ua">Сайт</dt>
+                <dd class="right-col column-ua">
+                  <a href="https://agathachristie.com" data-lang="ua"
+                    >agathachristie.com</a
+                  >
+                </dd>
+              </dl>
+              <p class="sig-ua" data-lang="ua">Автограф</p>
+              <img
+                src="./images/Agatha_Christie's_signature.svg.png"
+                alt="Signature of Agatha Christie"
+                data-lang="ua"
+              />
+            </div>
+          </div>
+        </aside>
+      </div>
+      <!-- 
+    ...............................................................
+    ...............................................................
+                             MAIN SECTION
+    ...............................................................
+    ...............................................................      
+    -->
+      <div class="container-main">
+        <!-- ENGLISH EN -->
+        <section class="content-main content-en" data-lang="en">
+          <h4 data-lang="en">Agatha Christie</h4>
+          <p data-lang="en">
+            Dame Agatha Mary Clarissa Christie, Lady Mallowan, DBE (née Miller;
+            15 September 1890 - 12 January 1976) was an English writer known for
+            her 66 detective novels and 14 short story collections, particularly
+            those revolving around fictional detectives Hercule Poirot and Miss
+            Marple. She also wrote the world's longest-running play, the murder
+            mystery The Mousetrap, which has been performed in the West End of
+            London since 1952. A writer during the "Golden Age of Detective
+            Fiction", Christie has been called the "Queen of Crime"—a moniker
+            which is now trademarked by her estate—or the "Queen of Mystery".
+            She also wrote six novels under the pseudonym Mary Westmacott. In
+            1971, she was made a Dame (DBE) by Queen Elizabeth II for her
+            contributions to literature. Guinness World Records lists Christie
+            as the best-selling fiction writer of all time, her novels having
+            sold more than two billion copies.
+          </p>
+          <p data-lang="en">
+            Christie was born into a wealthy upper-middle-class family in
+            Torquay, Devon, and was largely home-schooled. She was initially an
+            unsuccessful writer with six consecutive rejections, but this
+            changed in 1920 when The Mysterious Affair at Styles, featuring
+            detective Hercule Poirot, was published. Her first husband was
+            Archibald Christie; they married in 1914 and had one child before
+            divorcing in 1928. Following the breakdown of her marriage and the
+            death of her mother in 1926, she made international headlines by
+            going missing for eleven days. During both World Wars, she served in
+            hospital dispensaries, acquiring a thorough knowledge of the poisons
+            that featured in many of her novels, short stories, and plays.
+            Following her marriage to archaeologist Max Mallowan in 1930, she
+            spent several months each year on digs in the Middle East and used
+            her first-hand knowledge of this profession in her fiction.
+          </p>
+          <p data-lang="en">
+            According to UNESCO's Index Translationum, she remains the
+            most-translated individual author. Her novel And Then There Were
+            None is one of the top-selling books of all time, with approximately
+            100 million copies sold. Christie's stage play The Mousetrap holds
+            the world record for the longest initial run. It opened at the
+            Ambassadors Theatre in the West End on 25 November 1952, and by 2018
+            there had been more than 27,500 performances. The play was
+            temporarily closed in 2020 because of COVID-19 lockdowns in London
+            before it reopened in 2021.
+          </p>
+          <p data-lang="en">
+            In 1955, Christie was the first recipient of the Mystery Writers of
+            America's Grand Master Award. Later that year, Witness for the
+            Prosecution received an Edgar Award for best play. In 2013, she was
+            voted the best crime writer and The Murder of Roger Ackroyd the best
+            crime novel ever by 600 professional novelists of the Crime Writers'
+            Association. In 2015, And Then There Were None was named the
+            "World's Favourite Christie" in a vote sponsored by the author's
+            estate.[4] Many of Christie's books and short stories have been
+            adapted for television, radio, video games, and graphic novels. More
+            than 30 feature films are based on her work.
+          </p>
+          <h6 data-lang="en">Book sales</h6>
+          <p data-lang="en">
+            In her prime, Christie was rarely out of the bestseller list. She
+            was the first crime writer to have 100,000 copies of 10 of her
+            titles published by Penguin on the same day in 1948. As of 2018,
+            Guinness World Records listed Christie as the best-selling fiction
+            writer of all time. As of 2020, her novels had sold more than two
+            billion copies in 44 languages. Half the sales are of
+            English-language editions, and half are translations. According to
+            Index Translationum, as of 2020, she was the most-translated
+            individual author.
+          </p>
+          <p data-lang="en">
+            Christie is one of the most-borrowed authors in UK libraries. She is
+            also the UK's best-selling spoken-book author. In 2002, 117,696
+            Christie audiobooks were sold, in comparison to 97,755 for J. K.
+            Rowling, 78,770 for Roald Dahl and 75,841 for J. R. R. Tolkien. In
+            2015, the Christie estate claimed And Then There Were None was "the
+            best-selling crime novel of all time", with approximately 100
+            million sales, also making it one of the highest-selling books of
+            all time. More than two million copies of her books were sold in
+            English in 2020.
+          </p>
+        </section>
+        <!-- Spanish ES -->
+        <section class="content-main content-es" data-lang="es">
+          <h4 data-lang="es">Agatha Christie</h4>
+          <p data-lang="es">
+            Agatha Mary Clarissa Miller (Torquay, 15 de septiembre de
+            1890-Wallingford, 12 de enero de 1976), conocida como Agatha
+            Christie, fue una escritora y dramaturga británica especializada en
+            el género policial, por cuyo trabajo obtuvo reconocimiento a nivel
+            internacional. A lo largo de su carrera, publicó 66 novelas
+            policiales, 6 novelas rosas y 14 cuentos —con el pseudónimo de Mary
+            Westmacott—, además de incursionar como autora teatral en obras como
+            La ratonera o Testigo de cargo.
+          </p>
+          <p data-lang="es">
+            Nacida en una familia de clase media alta, recibió una educación
+            privada hasta su adolescencia y estudió en diversos institutos de
+            París. Mientras trabajaba como enfermera durante la Primera Guerra
+            Mundial, escribió su primera novela, El misterioso caso de Styles
+            (1920), donde introdujo por primera vez el personaje del detective
+            Hércules Poirot. Otras creaciones fueron Miss Marple y Tommy y
+            Tuppence Beresford.
+          </p>
+          <p data-lang="es">
+            En 1914, contrajo matrimonio con Archibald Christie, de quien se
+            divorció en 1928. En 1926, afectada por una supuesta depresión,
+            desapareció misteriosamente luego de que su coche apareciera
+            abandonado al borde de la carretera. Fue hallada once días más tarde
+            bajo un posible cuadro de amnesia, en un hotel donde se registró con
+            el nombre de una amante de su marido. En 1930, se casó con el
+            arqueólogo Max Mallowan, a quien acompañó largas temporadas en sus
+            viajes a Irak y Siria. Sus estancias inspiraron varias de sus
+            novelas posteriores como Asesinato en Mesopotamia (1936), Muerte en
+            el Nilo (1936) y Cita con la muerte (1938), muchas de las cuales
+            fueron adaptadas en teatro y cine con alta aceptación. En 1971, fue
+            designada Dama Comendadora de la Orden del Imperio Británico por la
+            reina Isabel II. Falleció por causas naturales en 1976.
+          </p>
+          <p data-lang="es">
+            Con entre dos y cuatro mil millones de copias de sus obras vendidas,
+            Christie es considerada como la novelista que más obras ha vendido
+            de todos los tiempos, y, junto a William Shakespeare, la primera o
+            segunda autora en hacerlo (aunque con el doble de obras). Según el
+            Index Translationum, es la autora individual más traducida, con
+            ediciones en al menos 103 idiomas. En 2013, su obra El asesinato de
+            Roger Ackroyd fue elegida como la mejor novela de crimen de todos
+            los tiempos por 600 miembros de la Asociación de Escritores de
+            Crimen.
+          </p>
+          <h6 data-lang="es">Legado y representaciones</h6>
+          <p data-lang="es">
+            Como una de las exponentes más representativas del género policial,
+            se le atribuyó el apelativo de la «reina del crimen». El Libro
+            Guinness de los Récords calificó a Christie como la novelista más
+            vendida de todos los tiempos. Sus novelas fueron vendidas en cerca
+            de cuatro millones de ejemplares y sus obras literarias figuran en
+            el puesto tercero de la lista de los libros más publicados en el
+            mundo por detrás de Shakespeare y la Biblia. Según el Index
+            Translationum, Christie es la autora individual más traducida con
+            ediciones trasladadas a aproximadamente 103 idiomas. Diez negritos
+            es la novela más exitosa de Christie con 100 millones de ventas
+            hasta la fecha, lo que la convierte en la historia de misterio más
+            comerciada en el mundo y en uno de los libros más vendidos de todos
+            los tiempos. En 2013, El asesinato de Roger Ackroyd fue elegida como
+            la mejor novela negra de todos los tiempos por 600 escritores de la
+            Asociación de Escritores de Crimen. La ratonera, una de sus obras de
+            teatro más exitosas, es el espectáculo más duradero de la historia.
+            Fue presentada en el Teatro Ambassador en Londres el 25 de noviembre
+            de 1952 y desde 2012 continúa funcionando después de más de 25 000
+            representaciones.
+          </p>
+          <p data-lang="es">
+            En España, sus colecciones fueron extremadamente populares desde los
+            años de 1940, especialmente las ediciones realizadas por editorial
+            Molino en su colección Biblioteca Oro. En 2011, la escritora
+            madrileña Ana Campoy publicó la colección infantil Las aventuras de
+            Alfred & Agatha, en la que recreó la infancia de Christie mediante
+            casos detectivescos junto a Alfred Hitchcock también en su niñez.
+          </p>
+          <p data-lang="es">
+            La autora Margery Allingham escribió en 1950 que Christie había
+            entretenido a «más personas durante más horas a la vez que casi
+            cualquier otro escritor de su generación», mientras que El País
+            publicó que, pese a todas las críticas posibles, la obra de la
+            «prototípica dama del crimen [...] tiene virtudes clamorosas: la
+            armonía general del relato y el gusto por el juego cerebral».
+          </p>
+          <p data-lang="es">
+            La mayoría de sus novelas y relatos han sido adaptados al cine,
+            televisión y teatro, algunos en más de una ocasión, como Asesinato
+            en el Orient Express y Muerte en el Nilo. Una de las excepciones fue
+            un filme de 1979 titulado Agatha de Michael Apted, en el que se tomó
+            la figura directa de la escritora y se intentó dilucidar su
+            misteriosa desaparición durante varios días en la década de 1920.
+            Poirot y otros detectives como Miss Marple han aparecido también en
+            numerosos filmes, programas de radio y representaciones teatrales.
+          </p>
+          <p data-lang="es">
+            Sugestión mortal, un drama de misterio de 1937 dirigido por Rowland
+            V. Lee, y Diez negritos, una obra de suspenso de 1945 dirigida por
+            René Clair, fueron las primeras adaptaciones importantes de
+            Christie. En 1957, Billy Wilder dirigió la película Testigo de cargo
+            con Tyrone Power, Charles Laughton y Marlene Dietrich, basada en su
+            obra teatral homónima, la cual fue continuada por El tren de las
+            4:50 (1962, de George Pollock), cuyo éxito inició una serie de
+            filmes centrados en los casos de Marple protagonizados por la actriz
+            Margaret Rutherford. Otras adaptaciones se titularon Noche sin fin
+            (1971), un ciclo rodado con figuras de Hollywood y basado en
+            Asesinato en el Orient Express (1974, Sidney Lumet), Muerte en el
+            Nilo (1979, John Guillermin), El espejo roto (1980, dirigida por Guy
+            Hamilton y protagonizada por Elizabeth Taylor), Culpable de
+            inocencia (1983, Desmond Davies) y Cita con la muerte (1988, de
+            Michael Winner).
+          </p>
+        </section>
+        <!-- FRENCH FR -->
+        <section class="content-main content-fr" data-lang="fr">
+          <h4 data-lang="fr">Agatha Christie</h4>
+          <p data-lang="fr">
+            Agatha Christie est une femme de lettres britannique, auteur de
+            nombreux romans policiers, née le 15 septembre 1890 à Torquay et
+            morte le 12 janvier 1976 à Wallingford au Royaume-Uni. Son nom de
+            plume est associé à celui de ses deux héros : Hercule Poirot,
+            détective professionnel belge, et Miss Marple, détective amateur. On
+            surnomme Agatha Christie « la Reine du crime ». En effet, elle est
+            l'un des écrivains les plus importants et novateurs du genre
+            policier. Elle a aussi écrit plusieurs romans, dont quelques
+            histoires sentimentales, sous le pseudonyme Mary Westmacott.
+          </p>
+          <p data-lang="fr">
+            Agatha Christie fait partie des écrivains les plus connus au monde
+            et elle est considérée comme l'auteur le plus lu de l'histoire chez
+            les Anglo-Saxons, après William Shakespeare ; c'est aussi de très
+            loin l'auteur le plus traduit dans le monde2. Elle a publié 66
+            romans, 154 nouvelles et 20 pièces de théâtre, ces œuvres ayant été
+            traduites en plusieurs langues. La plupart des intrigues se
+            déroulent à huis clos, ce qui permet au lecteur d'essayer de deviner
+            l'identité du coupable avant la fin du récit. La saveur de ses
+            histoires réside dans la résolution de l'enquête, souvent
+            improbable, prenant le lecteur par surprise.
+          </p>
+          <p data-lang="fr">
+            Ses romans et nouvelles ont été adaptés au cinéma, dans des jeux
+            vidéo ou à la télévision, en particulier Le Crime de
+            l'Orient-Express, Dix Petits Nègres, Mort sur le Nil, Le Train de 16
+            h 50 et Témoin à charge.
+          </p>
+          <h6 data-lang="fr">Les dernières aventures</h6>
+          <p data-lang="fr">
+            Après la guerre, le papier étant à nouveau disponible, les ventes de
+            livres reprennent. Le cinéma, le théâtre et la télévision
+            s'intéressent aux œuvres de la romancière. Mais, fin 1947, Max est
+            nommé responsable de la chaire d'archéologie sur l'Asie Mineure à
+            l'Université de Londres et doit diriger une nouvelle expédition. De
+            1953 à 1958, le couple mène des fouilles à Nimrud (Irak), et Agatha
+            Christie, proche de la soixantaine, y participe tout en continuant à
+            écrire. À partir de 1951, ils font de grandes découvertes, mais en
+            1958 ils doivent quitter le pays à cause de la révolution après
+            l'assassinat du roi d'Irak Fayçal II.
+          </p>
+          <p data-lang="fr">
+            Sur un plan plus privé, en 1949, sa fille Rosalind se remarie avec
+            Anthony Hicks. Mais la mort de sa sœur Marge en 1951, puis celles de
+            son premier mari Archibald Christie en décembre 1962 et de son neveu
+            Jack, viennent apporter une ombre au tableau. Elle assistera à
+            nouveau à un événement heureux en 1967 lors du mariage de son
+            petit-fils Mathew, diplômé du New College, avec Angela Mapes.
+          </p>
+          <p data-lang="fr">
+            Dans les années 1950, le théâtre prend une place importante dans le
+            travail d'Agatha Christie. En novembre 1952, sa pièce de théâtre La
+            Souricière (The Mouse Trap) est présentée pour la première fois à
+            Londres et rencontre un succès grandissant. Le 13 novembre 1956,
+            elle participe à la 1998e représentation, ce qui en fait la pièce la
+            plus longtemps jouée du théâtre britannique. Sa pièce Témoin à
+            charge rencontre elle aussi un succès mondial : elle est donnée en
+            octobre 1953 à Londres, en décembre 1954 à New York et en novembre
+            1955 à Paris. Devant le succès de la pièce, une adaptation
+            cinématographique est prévue, et en 1957 sort Témoin à charge de
+            Billy Wilder, qui sera nommé six fois aux Oscars. Sa troisième pièce
+            à rencontrer le succès est La Toile d'araignée, qui débute en
+            décembre 1954 et sera représentée 774 fois. En 1954, Agatha Christie
+            devient alors la première femme à avoir trois pièces de théâtre en
+            production simultanément dans le West End de Londres.
+          </p>
+          <p data-lang="fr">
+            En 1953, ses anciens livres sont réédités. À partir de 1954, elle
+            écrit à peu près un livre par an pour respecter le slogan de son
+            éditeur : « A Christie for Christmas » (« Un Christie pour Noël »).
+            En 1956, sort son dernier roman sous le pseudonyme de Mary
+            Westmacott, Le Poids de l'amour (The Burden). Elle n'a plus besoin
+            de garder un rythme de production élevé, et elle avoue préférer
+            passer son temps libre à flâner dans les expositions, assister à des
+            concerts et opéras, voire simplement à jardiner.
+          </p>
+          <p data-lang="fr">
+            En 1955, elle fonde l’Agatha Christie Limited (ACL), société
+            propriétaire de ses droits d'auteur détenue aujourd'hui à 36 % par
+            sa famille et à 64 % par le groupe Chorion, et qui reçoit plus de
+            300 demandes de licences par an25, puis par Acorn Media Group.
+          </p>
+        </section>
+        <!-- RUSSIAN RU -->
+        <section class="content-main content-ru" data-lang="ru">
+          <h4 data-lang="ru">Ага́та Кри́сти</h4>
+          <p data-lang="ru">
+            Дама Ага́та Мэ́ри Клари́сса, ле́ди Ма́ллоуэн (англ. Agatha Mary Clarissa,
+            Lady Mallowan; 15 сентября 1890, Торки, Девон, Англия,
+            Великобритания — 12 января 1976, Уоллингфорд, Оксфордшир, Англия,
+            Великобритания), более известная по фамилии первого мужа как Ага́та
+            Кри́сти (англ. Agatha Christie) — английская писательница и
+            драматург. Относится к числу самых известных в мире авторов
+            детективной прозы.
+          </p>
+          <p data-lang="ru">
+            Произведения Агаты Кристи стали одними из самых публикуемых за всю
+            историю человечества (уступая только «Библии» и трудам Уильяма
+            Шекспира), а также — самыми переводимыми (7236 переводов). Она
+            опубликовала более 60 детективных романов, 6 психологических романов
+            (под псевдонимом Mary Westmacott – Мэри Уэстмакотт (Вестмакотт) и 19
+            сборников рассказов. В театрах Лондона были поставлены 16 её пьес.
+            Книги Агаты Кристи изданы тиражом свыше 4 миллиардов экземпляров и
+            переведены на более чем 100 языков мира.
+          </p>
+          <p data-lang="ru">
+            Ей также принадлежит рекорд по максимальному числу театральных
+            постановок одного произведения. Пьеса Агаты Кристи «Мышеловка»
+            (англ. «The Mousetrap») впервые была поставлена в 1952 году и шла в
+            театре вплоть до 2020 года когда она была прервана из-за пандемии
+            коронавируса, однако позже постановки возобновились. На десятилетнем
+            юбилее пьесы в театре «Амбассадор» в Лондоне, в интервью
+            телекомпании «ITN», Агата Кристи призналась, что не считает пьесу
+            лучшей для постановки в Лондоне, но публике нравится, и она сама
+            ходила на спектакль несколько раз в год.
+          </p>
+          <h6 data-lang="ru">Память</h6>
+          <ul data-lang="ru">
+            <li>В 1985 году в её честь назван кратер Кристи на Венере.</li>
+            <li>
+              В 1988 году в её честь была названа одна из самых популярных
+              советских (российских) рок-групп, «Агата Кристи».
+            </li>
+            <li>
+              25 ноября 2012 года, к 60-летию пьесы «Мышеловка», состоялось
+              открытие памятника Агате Кристи в театральном районе Лондона, в
+              самом центре Ковент-Гардена (скульптор Бен Твистон-Дэвис)
+            </li>
+            <li>
+              В городе Монтобан (Франция) есть улица в честь писательницы (на
+              44°00′29″ с. ш. 1°22′55″ в. д.HGЯO).
+            </li>
+            <li>
+              В Пуэрто-де-ла-Крус на Тенерифе в 2007 году установлен бюст на
+              лестнице имени Агаты Кристи в районе Ла Паз по улице Сан Амаро,
+              как память о пребывании писательницы в 1927 году.
+            </li>
+          </ul>
+          <h6 data-lang="ru">Основные литературные герои</h6>
+          <ul data-lang="ru">
+            <li>Мисс Марпл</li>
+            <li>Эркюль Пуаро</li>
+            <li>Капитан Гастингс</li>
+            <li>Мисс Лемон (секретарь Пуаро и Паркера Пайна)</li>
+            <li>Старший инспектор Джепп</li>
+            <li>Ариадна Оливер</li>
+            <li>Суперинтендант Баттл</li>
+            <li>Полковник Рейс</li>
+            <li>Томми и Таппенс Бересфорды</li>
+          </ul>
+          <p data-lang="ru" class="listing">
+            Также другие детективы, появлявшиеся всего в одном сборнике
+            детективных рассказов:
+          </p>
+          <ul data-lang="ru">
+            <li>Паркер Пайн</li>
+            <li>Харли Кин</li>
+            <li>Мистер Саттертуэйт</li>
+          </ul>
+        </section>
+        <!-- UKRAINIAN UA -->
+        <section class="content-main content-ua" data-lang="ua">
+          <h4 data-lang="ua">Агата Крісті</h4>
+          <p data-lang="ua">
+            Да́ма Ага́та Ме́рі Клари́сса Крі́сті, ле́ді Малло́вен, уроджена Мі́ллер
+            (англ. Dame Agatha Mary Clarissa Christie, Lady Mallowan, née
+            Miller; публікувалася під власним ім'ям і під псевдонімом Ме́рі
+            Ве́стмакотт, англ. Mary Westmacott; 15 вересня 1890, Торкі, Девон —
+            12 січня 1976, Воллінгфорд, Оксфордшир) — англійська письменниця,
+            одна з найвідоміших у світі представниць детективного жанру, авторка
+            класичних персонажів детективної літератури — Еркюля Пуаро та міс
+            Марпл.
+          </p>
+          <p data-lang="ua">
+            За кількістю перекладів (понад 100 мовами світу) і сумарним накладом
+            друкованих видань (понад 2 млрд примірників) книги Агати Крісті
+            станом на 2012 рік посіли третє місце в історії після Біблії та
+            творів Вільяма Шекспіра. Крім того, драматургічним творам
+            письменниці належить рекорд за найбільшим в історії числом
+            театральних постановок. П'єса Крісті «Мишоловка», уперше поставлена
+            1952 року, дотепер безупинно демонструється на сценах Лондона.
+          </p>
+          <h6 data-lang="ua">Дитинство та перший шлюб</h6>
+          <p data-lang="ua">
+            Агата Мері Кларисса Міллер народилася 15 вересня 1890 року в місті
+            Торкі (графство Девон). Її батьки були заможними переселенцями з
+            США. Вона була молодшою дочкою в сім'ї Міллер. У сім'ї Міллерів було
+            ще двоє дітей: донька Маргарет Фрері (1879—1950) і син Луїс Монтан
+            («Монті», 1880—1929). Агата отримала гарну домашню освіту — зокрема,
+            музичну, — і тільки страх перед сценою завадив їй стати професійним
+            виконавцем.
+          </p>
+          <p data-lang="ua">
+            Під час Першої світової війни Агата працювала медсестрою в
+            госпіталі. Їй подобалася ця професія і вона відгукувалася про неї,
+            як про «одну з найкорисніших професій, якою може займатися людина».
+            Вона також працювала фармацевтом в аптеці, що відбилося згодом на її
+            творчості: 83 злочини в її творах були здійснені за допомогою
+            отруєння.
+          </p>
+          <p data-lang="ua">
+            Агата Крісті на Різдво 1914 року одружилася з полковником
+            Арчибальдом Крісті, в якого була закохана вже кілька років, ще коли
+            він був лейтенантом. Народила дочку Розалінду. Цей період став
+            початком творчого шляху Агати Крісті. У 1920 році опублікований
+            перший роман Крісті — «Таємнича пригода в Стайлзі». Є припущення, що
+            причиною звернення Крісті до детективного жанру була суперечка зі
+            старшою сестрою Мардж (яка вже проявила себе як літератор), що вона
+            теж зможе створити щось гідне публікації. Тільки в сьомому за
+            рахунком видавництві рукопис надрукували тиражем 2000 примірників.
+            Письменниця-початківець отримала 25 фунтів стерлінгів гонорару.
+          </p>
+          <h6 data-lang="ua">Зникнення</h6>
+          <p data-lang="ua">
+            У 1926 році померла мати Агати. Наприкінці того ж року чоловік Агати
+            Крісті Арчибальд зізнався у невірності і попросив розлучення,
+            оскільки закохався у свою колегу з гольфу Ненсі Ніл. Після сварки на
+            початку грудня 1926 року Агата зникла зі свого будинку у Беркширі,
+            залишивши листа до свого секретаря, у якому стверджувала, що
+            попрямувала в Йоркшир. Її зникнення викликало гучний суспільний
+            резонанс, оскільки в письменниці вже з'явилися шанувальники її
+            творчості. Протягом одинадцяти днів про місцезнаходження Крісті
+            нічого не було відомо.
+          </p>
+          <p data-lang="ua">
+            Знайшли автомобіль Агати, в салоні якого виявили її шубку. За кілька
+            днів розшукали саму письменницю. Як виявилося, Крісті
+            зареєструвалася під іменем Тереза Ніл у невеликому спа-готелі «Свон
+            Гайдропатік» (англ. Swan Hydropathic Hotel; тепер «Олд Свон», англ.
+            Old Swan Hotel). Крісті ніяк не пояснила своє зникнення, а двоє
+            лікарів діагностували у неї амнезію, яку спричинила закрита
+            черепно-мозкова травма. Причини зникнення Агати Крісті проаналізував
+            британський психолог Ендрю Норманом у своїй книзі «Завершений
+            портрет» (англ. The Finished Portrait), де він, зокрема,
+            стверджував, що гіпотеза травматичної амнезії не витримує жодної
+            критики, оскільки поведінка Агати Крісті свідчила про зворотне: вона
+            зареєструвалася в готелі під прізвищем коханки чоловіка, час
+            проводила за грою на фортепіано, спа-процедурами, відвідуванням
+            бібліотеки. Все ж, вивчивши всі свідчення, Норман прийшов до
+            висновку, що мала місце дисоціативна фуга, яку спричинив тяжкий
+            психічний розлад.
+          </p>
+          <p data-lang="ua">
+            За іншою версією зникнення Крісті задумала навмисне, щоб помститися
+            чоловікові, якого поліція неминуче запідозрила б у вбивстві.
+          </p>
+          <p data-lang="ua">
+            Шлюб Арчибальда та Агати Крісті закінчився розлученням в 1928 році.
+          </p>
+          <p data-lang="ua">
+            У своєму романі «Незавершений портрет», опублікованому 1934 року під
+            псевдонімом Мері Вестмакотт, Крісті описала події, схожі на її
+            власне зникнення.
+          </p>
+          <h6 data-lang="ua">Другий шлюб та пізні роки</h6>
+          <p data-lang="ua">
+            1930 року, подорожуючи по Іраку, на розкопках в Урі Крісті
+            познайомилася з археологом Максом Маллоуеном, молодшим на 15 років,
+            з яким одружилася. Агата Крісті говорила про свій шлюб, що для
+            археолога жінка повинна бути якомога старшою, адже тоді її цінність
+            значно зростає. З тих пір вона періодично проводила кілька місяців
+            на рік у Сирії та Іраку в експедиціях разом з чоловіком. Цей період
+            її життя знайшов відображення в автобіографічному романі «Розкажи,
+            як ти живеш». У цьому шлюбі Крісті прожила все життя, до своєї
+            смерті 1976 року.
+          </p>
+          <p data-lang="ua">
+            Завдяки поїздкам Крісті разом із чоловіком на Близький Схід, події
+            декількох її творів сталися саме там. Місцем дії інших романів —
+            наприклад, «Десять негренят» (згодом перевиданий під назвою «І не
+            лишилось жодного») — було місто Торк або його околиці, місце, де
+            народилася Крісті. Роман «Убивство у „Східному експресі“» (1934) був
+            написаний у готелі «Пера Палас» (англ. Hotel Pera Palace) у
+            Стамбулі. У номері 411 готелю, де проживала Агата Крісті, тепер її
+            меморіальний музей. Маєток Грінвей-Естейт (англ. The Greenway
+            Estate) у Девоні, який пара купила 1938 року, знаходиться під
+            захистом британського Товариства охорони пам'яток (англ. National
+            Trust).
+          </p>
+          <p data-lang="ua">
+            Крісті часто зупинялася в особняку Ебні-Голл у Чеширі, який належав
+            її швагрові Джеймсу Воттсу (англ. James Watts). Дія принаймні двох
+            творів Крісті — «Пригоди різдвяного пудингу» (оповідання також
+            включено до однойменної збірки) і роману «Після похорону» —
+            відбувалося саме в цьому маєтку. «Ебні став джерелом натхнення для
+            Агати; звідси були взяті описи таких місць як Стайлз, Чімніз,
+            Стоунгейтс й інших будинків, які в тій чи іншій мірі являють собою
+            Ебні».
+          </p>
+          <p data-lang="ua">
+            1956 року Агата Крісті нагороджена орденом Британської імперії, а
+            1971 року за досягнення в галузі літератури визнана гідною
+            дворянського титулу дама (англ. Dame Commander), що вживається перед
+            іменем. Трьома роками раніше, 1968 року, титулу Лицаря ордена
+            Британської імперії за досягнення в галузі археології був удостоєний
+            і чоловік Агати Крісті Макс Маллоуен.
+          </p>
+          <p data-lang="ua">
+            1957 року письменниця очолила англійський Детективний клуб.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

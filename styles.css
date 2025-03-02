@@ -1,0 +1,319 @@
+/* -------------------------------------------------
+UNIVERSAL
+-----------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* -------------------------------------------------
+                              HEADER SECTION 
+-----------------------------------------------------*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.switchers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: right;
+  justify-content: space-around;
+}
+
+.project-heading {
+  border: 1px solid;
+  text-align: center;
+  font-size: 2.4rem;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
+.switcher-theme {
+  flex: 2;
+}
+
+.switch-mode-input {
+  visibility: hidden;
+}
+
+.switch-mode-label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 13px;
+  background-color: lightgray;
+  position: relative;
+}
+
+.switch-mode-label .switch-circle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #a89984;
+  animation: toggleOff 0.5s linear forwards;
+}
+
+.switch-mode-input:checked + .switch-mode-label {
+  background-color: #282828;
+}
+
+.switch-mode-input:checked + .switch-mode-label .switch-circle {
+  background-color: #a89984;
+  animation: toggleOn 0.5s linear forwards;
+}
+
+/* Language Switch */
+.switcher-language {
+  width: 10rem;
+  border-radius: 10px;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+
+.lang-select {
+  background-color: rgb(40, 40, 40);
+  border-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  color: #a89984;
+  font-weight: 600;
+  font-size: 1.1rem;
+  height: 30px;
+  padding: 2px 5px;
+}
+
+.switch-mode-input.lang-select {
+  background-color: lightgray;
+  border-color: lightgray;
+}
+
+/* -------------------------------------------------
+                              MAIN SECTION 
+-----------------------------------------------------*/
+main {
+  display: grid;
+  grid-template-areas: "main aside";
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.container-main {
+  grid-area: main;
+}
+
+.content-main {
+  border: 3px solid;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
+  padding: 0.5rem;
+}
+
+h4 {
+  font-size: 2.1rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+  padding-left: 0.3rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.3;
+  padding: 0.75rem;
+  text-align: justify;
+}
+
+p::first-letter:not(.listing) {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.active {
+  display: block;
+}
+
+ul {
+  list-style-type: lower-greek;
+  padding: 1rem 2rem;
+}
+
+li::first-letter {
+  padding-left: 1rem;
+  padding-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+/* -------------------------------------------------
+                              SIDEBAR 
+-----------------------------------------------------*/
+.container-aside {
+  grid-area: aside;
+}
+
+.sidebar {
+  width: 350px;
+  margin-left: 0.4rem;
+  padding: 0.5rem;
+  overflow-x: hidden;
+  border: 3px solid;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
+}
+
+.honorifics {
+  margin: 0.1rem;
+  padding: 0.1rem;
+}
+
+.honorific-prefix {
+  display: block;
+  font-style: italic;
+  text-align: center;
+}
+
+.honorific-name {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+img {
+  width: 325px;
+  margin: auto;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+figcaption {
+  text-align: center;
+  text-decoration: underline;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+dl {
+  display: grid;
+}
+
+dt {
+  grid-column-start: 1;
+  font-weight: 500;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+dt,
+dd {
+  margin: 0.1rem;
+  padding: 0.15rem;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+/* -------------------------------------------------
+                              ANIMATION 
+-----------------------------------------------------*/
+@keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes toggleOff {
+  0% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* -------------------------------------------------
+                              MEDIA QUERY 
+-----------------------------------------------------*/
+
+@media screen and (max-width: 1250px) {
+  .project-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .project-heading {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .project-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 300px;
+  }
+  img {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .container-main {
+    width: 90%;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  img {
+    width: 90%;
+  }
+}
