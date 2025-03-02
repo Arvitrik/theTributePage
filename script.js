@@ -1,57 +1,34 @@
-//
 const ddlEl = document.querySelector("#lang-article");
-let langEl = document.querySelectorAll("[data-lang]");
+const langEl = document.querySelectorAll("[data-lang]");
+
+const body = document.querySelector("body");
+const inputEl = document.querySelector(".switch-mode-input");
+const imgsEl = document.querySelectorAll("img");
 
 // SET DEFAULT LANGUAGE (en)
 // SET DISPLAY NULL FOR ALL VALUES AND DISPLAY DEFAULT VALUE ONLY
 function defaultLanguage() {
-  for (const value of langEl.values()) {
-    value.style.display = "none";
-    if (value.getAttribute("data-lang") === "en") {
-      value.style.display = "block";
-    }
-  }
+  displayContent("en");
 }
 
 // SWITCH LANGUAGE ON DROPDOWNLIST CHANGE
 // SET DISPLAY NULL FOR ALL VALUES AND DISPLAY SELECTED VALUE ONLY
 function changeLanguage() {
-  console.log(ddlEl.value);
-  if (ddlEl.value === "en") {
-    for (const value of langEl.values()) {
-      value.style.display = "none";
-      if (value.getAttribute("data-lang") === "en") {
-        value.style.display = "block";
-      }
-    }
-  } else if (ddlEl.value === "es") {
-    for (const value of langEl.values()) {
-      value.style.display = "none";
-      if (value.getAttribute("data-lang") === "es") {
-        value.style.display = "block";
-      }
-    }
-  } else if (ddlEl.value === "fr") {
-    for (const value of langEl.values()) {
-      value.style.display = "none";
-      if (value.getAttribute("data-lang") === "fr") {
-        value.style.display = "block";
-      }
-    }
-  } else if (ddlEl.value === "ru") {
-    for (const value of langEl.values()) {
-      value.style.display = "none";
-      if (value.getAttribute("data-lang") === "ru") {
-        value.style.display = "block";
-      }
-    }
-  } else if (ddlEl.value === "ua") {
-    for (const value of langEl.values()) {
-      value.style.display = "none";
-      if (value.getAttribute("data-lang") === "ua") {
-        value.style.display = "block";
-      }
-    }
+  switch (ddlEl.value) {
+    case "en":
+      displayContent("en");
+      break;
+    case "es":
+      displayContent("es");
+      break;
+    case "fr":
+      displayContent("fr");
+      break;
+    case "ru":
+      displayContent("ru");
+      break;
+    case "ua":
+      displayContent("ua");
   }
 }
 
@@ -62,12 +39,17 @@ if (document.readyState == "loading") {
   defaultLanguage(); // DOM ready
 }
 
+// DISPLAY SELECTED LANGUAGE CONTENT ON SCREEN
+function displayContent(lang) {
+  for (const value of langEl.values()) {
+    value.style.display = "none";
+    if (value.getAttribute("data-lang") === lang) {
+      value.style.display = "block";
+    }
+  }
+}
+
 // LIGHT / DARK THEME SWITCHER
-const inputEl = document.querySelector(".switch-mode-input");
-const body = document.querySelector("body");
-
-const imgsEl = document.querySelectorAll("img");
-
 inputEl.addEventListener("change", (e) => {
   if (e.target.checked) {
     // DARK MODE
